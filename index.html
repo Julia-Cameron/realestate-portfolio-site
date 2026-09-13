@@ -3,52 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Luna Scott Real Estate - Home</title>
+
+    <!-- SEO / Social -->
+    <meta name="description" content="Luna Scott — curated luxury properties and bespoke real estate services in Windsor-Essex. Explore exclusive listings.">
+    <link rel="canonical" href="https://julia-cameron.github.io/realestate-portfolio-site/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Luna Scott Real Estate — Curated Luxury Properties">
+    <meta property="og:description" content="Exclusive luxury listings and bespoke real estate service in Windsor-Essex.">
+    <meta property="og:image" content="https://julia-cameron.github.io/realestate-portfolio-site/lunascott.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts & Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Luna Scott Real Estate",
+      "url": "https://julia-cameron.github.io/realestate-portfolio-site/",
+      "logo": "https://julia-cameron.github.io/realestate-portfolio-site/favicon.png"
+    }
+    </script>
 </head>
 
 <body>
-    <header class="site-header">
-        <a href="index.html" class="logo-area">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <a href="index.html" class="logo-area" aria-label="Luna Scott home">
             <div class="logo-mark">LS</div>
             <div class="logo-name">Luna Scott</div>
         </a>
-        <nav class="main-nav">
-            <a href="index.html" class="nav-btn">Home</a>
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="nav-btn" aria-current="page">Home</a>
             <a href="listings.html" class="nav-btn">Listings</a>
             <a href="contact.html" class="nav-btn">Contact</a>
             <a href="sitemap.html" class="nav-btn">Sitemap</a>
         </nav>
     </header>
-    <main>
+
+    <main id="main-content">
         <section class="hero">
             <div class="hero-content">
-                <h1>CURATED LUXURY PROPERTIES WITH A PERSONAL TOUCH.</h1>
+                <h1>Curated luxury properties with a personal touch</h1>
 
                 <p class="bio-text">
                     With over a decade of elite experience in the Windsor-Essex luxury real estate market, Luna Scott
                     has established herself as the region's premier authority on high-value estates and bespoke property
-                    acquisitions. Her reputation is built upon a foundation of absolute discretion, surgical precision,
-                    and a relentless commitment to her clients' unique visions.
+                    acquisitions. Her reputation is built upon a foundation of discretion, precision, and a relentless
+                    commitment to her clients' unique visions.
+                </p>
 
-                    Luna's background in interior design provides her with a distinct advantage, allowing her to look
-                    past the surface of a property to reveal the hidden potential and architectural integrity within
-                    every estate. This rare "designer's eye" ensures that every home she represents is positioned for
-                    maximum impact, while every buyer she advises finds a residence that is truly a "bespoke
-                    experience".
-
-                    Known for her "personal touch," Luna treats every transaction not merely as a business deal, but as
-                    the curation of a lifestyle. Whether navigating the complexities of waterfront views or securing
-                    off-market multi-car suites, she ensures a seamless journey from the first inquiry to the final
-                    signature.
+                <p class="bio-text">
+                    Known for her "personal touch," Luna treats every transaction not merely as a business deal but as the
+                    curation of a lifestyle. Whether navigating waterfront views or securing off-market multi-car suites,
+                    she ensures a seamless journey from the first inquiry to the final signature.
                 </p>
             </div>
 
             <div class="hero-photo">
-                <img src="lunascott.png" alt="Luna Scott">
+                <img src="lunascott.png" alt="Portrait of Luna Scott" width="450" height="600" loading="eager">
             </div>
         </section>
+
         <section class="info-row">
             <div class="action-box">
                 <h3>Our Mission</h3>
@@ -71,17 +101,16 @@
             </div>
         </section>
     </main>
-    <footer class="site-footer">
-        <div style="margin-bottom: 2rem;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 1.8rem; letter-spacing: 3px; margin-bottom: 0.5rem;">
-                Luna Scott</h2>
-            <p style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.8;">Luxury Real
-                Estate • Windsor, Ontario</p>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-brand">
+            <h2>Luna Scott</h2>
+            <p class="footer-sub">Luxury Real Estate • Windsor, Ontario</p>
         </div>
 
-        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+        <div class="footer-bottom">
             <p>&copy; 2026 Luna Scott Real Estate. All rights reserved.</p>
-            <p style="margin-top: 0.5rem;">Curating exceptional lifestyles for the discerning client.</p>
+            <p>Curating exceptional lifestyles for the discerning client.</p>
         </div>
     </footer>
 </body>
