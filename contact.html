@@ -3,66 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact - Luna Scott</title>
+
+    <meta name="description" content="Contact Luna Scott for private concierge real estate services and inquiries about luxury properties in Windsor-Essex.">
+    <link rel="canonical" href="https://julia-cameron.github.io/realestate-portfolio-site/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — Luna Scott">
+    <meta property="og:description" content="Reach out for private concierge real estate services and exclusive listings.">
+
+    <!-- Fonts & performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-    <header class="site-header">
-        <a href="index.html" class="logo-area">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <a href="index.html" class="logo-area" aria-label="Luna Scott home">
             <div class="logo-mark">LS</div>
             <div class="logo-name">Luna Scott</div>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <a href="index.html" class="nav-btn">Home</a>
             <a href="listings.html" class="nav-btn">Listings</a>
-            <a href="contact.html" class="nav-btn">Contact</a>
+            <a href="contact.html" class="nav-btn" aria-current="page">Contact</a>
             <a href="sitemap.html" class="nav-btn">Sitemap</a>
         </nav>
     </header>
-    <main class="center-container">
-        <h1 style="text-align: center; font-family: 'Cinzel'; font-size: 4rem; margin-bottom: 0.5rem;">The Inquiry</h1>
-        <p
-            style="text-align: center; font-size: 1.2rem; margin-bottom: 4rem; color: var(--gold-deep); letter-spacing: 1px;">
-            PRIVATE CONCIERGE SERVICE</p>
 
-        <form class="form-card" action="mailto:lunascott@gmail.com" method="post" enctype="text/plain"
-            style="padding: 4rem; border-top: 8px solid var(--gold-deep);">
+    <main id="main-content" class="center-container">
+        <h1 class="page-title">The Inquiry</h1>
+        <p class="page-sub">Private concierge service</p>
 
-            <div style="display: flex; gap: 30px; margin-bottom: 1.5rem;">
-                <div class="form-group" style="flex: 1;">
-                    <label>First Name</label>
-                    <input type="text" name="firstname" placeholder="First Name" required>
+        <form class="form-card" action="mailto:lunascott@gmail.com" method="post" enctype="text/plain" novalidate>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" name="firstname" type="text" placeholder="First Name" required>
                 </div>
-                <div class="form-group" style="flex: 1;">
-                    <label>Last Name</label>
-                    <input type="text" name="lastname" placeholder="Last Name" required>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" name="lastname" type="text" placeholder="Last Name" required>
                 </div>
             </div>
 
-            <div style="display: flex; gap: 30px; margin-bottom: 1.5rem;">
-                <div class="form-group" style="flex: 1;">
-                    <label>Phone Number</label>
-                    <input type="tel" name="phone" placeholder="(555) 000-0000" required>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(555) 000-0000" required>
                 </div>
-                <div class="form-group" style="flex: 1;">
-                    <label>Email Address</label>
-                    <input type="email" name="email" placeholder="email@address.com" required>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="email@address.com" required>
                 </div>
             </div>
 
-            <div style="display: flex; gap: 30px; margin-bottom: 1.5rem;">
-                <div class="form-group" style="flex: 1;">
-                    <label>Property Type</label>
-                    <select name="property_type">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="property_type">Property Type</label>
+                    <select id="property_type" name="property_type" class="luxury-select">
                         <option value="house">House</option>
                         <option value="condominium">Condominium</option>
                     </select>
                 </div>
-                <div class="form-group" style="flex: 1;">
-                    <label>Price Range</label>
-                    <select name="price_range" class="luxury-select">
+                <div class="form-group">
+                    <label for="price_range">Price Range</label>
+                    <select id="price_range" name="price_range" class="luxury-select">
                         <option value="500k-750k">$500,000 - $750,000</option>
                         <option value="750k-1m">$750,000 - $1,000,000</option>
                         <option value="1m-plus">$1,000,000+</option>
@@ -70,19 +85,19 @@
                 </div>
             </div>
 
-            <div style="display: flex; gap: 30px; margin-bottom: 1.5rem;">
-                <div class="form-group" style="flex: 1;">
-                    <label>Number of Bedrooms</label>
-                    <select name="bedrooms">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bedrooms">Number of Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms">
                         <option value="1">1 Bedroom</option>
                         <option value="2">2 Bedrooms</option>
                         <option value="3+">3+ Bedrooms</option>
                         <option value="4+">4+ Bedrooms</option>
                     </select>
                 </div>
-                <div class="form-group" style="flex: 1;">
-                    <label>Number of Bathrooms</label>
-                    <select name="bathrooms">
+                <div class="form-group">
+                    <label for="bathrooms">Number of Bathrooms</label>
+                    <select id="bathrooms" name="bathrooms">
                         <option value="1">1 Bathroom</option>
                         <option value="2">2 Bathrooms</option>
                         <option value="3+">3+ Bathrooms</option>
@@ -90,44 +105,34 @@
                 </div>
             </div>
 
-            <div class="form-group" style="margin-bottom: 1.5rem;">
+            <div class="form-group">
                 <label>Essential Amenities</label>
-                <div
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 1.5rem; background: var(--champagne); border: 1px solid var(--gold-deep);">
-                    <label class="feature-label"><input type="checkbox" name="feature" value="waterfront"> Waterfront
-                        View</label>
-                    <label class="feature-label"><input type="checkbox" name="feature" value="wine"> Wine
-                        Gallery</label>
-                    <label class="feature-label"><input type="checkbox" name="feature" value="pool"> Infinity
-                        Pool</label>
-                    <label class="feature-label"><input type="checkbox" name="feature" value="garage"> Multi-Car
-                        Suite</label>
+                <div class="feature-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:1.25rem;background:var(--champagne);border:1px solid var(--gold-deep);border-radius:6px">
+                    <label class="feature-label"><input type="checkbox" name="feature" value="waterfront"> Waterfront View</label>
+                    <label class="feature-label"><input type="checkbox" name="feature" value="wine"> Wine Gallery</label>
+                    <label class="feature-label"><input type="checkbox" name="feature" value="pool"> Infinity Pool</label>
+                    <label class="feature-label"><input type="checkbox" name="feature" value="garage"> Multi-Car Suite</label>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="comments" class="feature-label">Additional Comments</label>
-                <textarea id="comments" name="comments"
-                    placeholder="Tell us more about your dream residence..."></textarea>
+                <textarea id="comments" name="comments" placeholder="Tell us more about your dream residence..."></textarea>
             </div>
 
-            <button type="submit" class="btn-action"
-                style="width: 100%; padding: 1.5rem; font-size: 1.3rem; margin-top: 2rem; cursor: pointer;">
-                Submit Private Inquiry
-            </button>
+            <button type="submit" class="btn-action submit-btn-large" style="width:100%;">Submit Private Inquiry</button>
         </form>
-    </main>
-    <footer class="site-footer">
-        <div style="margin-bottom: 2rem;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 1.8rem; letter-spacing: 3px; margin-bottom: 0.5rem;">
-                Luna Scott</h2>
-            <p style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.8;">Luxury Real
-                Estate • Windsor, Ontario</p>
-        </div>
 
-        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+        <p style="margin-top:1.5rem;font-size:.95rem;opacity:.8">Prefer not to use email? Please call +1 (555) 000-0000 for a private consultation.</p>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-brand">
+            <h2>Luna Scott</h2>
+            <p class="footer-sub">Luxury Real Estate • Windsor, Ontario</p>
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2026 Luna Scott Real Estate. All rights reserved.</p>
-            <p style="margin-top: 0.5rem;">Curating exceptional lifestyles for the discerning client.</p>
         </div>
     </footer>
 </body>
