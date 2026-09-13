@@ -3,91 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Properties – Luna Scott</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore curated luxury properties represented by Luna Scott in Windsor-Essex. Exclusive listings and bespoke service.">
+    <link rel="canonical" href="https://julia-cameron.github.io/realestate-portfolio-site/listings.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Luna Scott — Listings">
+    <meta property="og:description" content="Explore curated luxury properties represented by Luna Scott in Windsor-Essex.">
+
+    <!-- Fonts & performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-    <header class="site-header">
-        <a href="index.html" class="logo-area">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <a href="index.html" class="logo-area" aria-label="Luna Scott home">
             <div class="logo-mark">LS</div>
             <div class="logo-name">Luna Scott</div>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <a href="index.html" class="nav-btn">Home</a>
-            <a href="listings.html" class="nav-btn">Listings</a>
+            <a href="listings.html" class="nav-btn" aria-current="page">Listings</a>
             <a href="contact.html" class="nav-btn">Contact</a>
             <a href="sitemap.html" class="nav-btn">Sitemap</a>
         </nav>
     </header>
 
-    <main style="padding: 4rem 0;">
-        <section class="listings-grid">
-            <div class="property-card">
+    <main id="main-content" style="padding: 4rem 0;">
+        <section class="listings-grid" aria-label="Property listings">
+            <article class="property-card" aria-labelledby="prop-azure">
                 <div class="property-image">
-                    <img src="house1.png" alt="Luxury Villa">
+                    <img src="house1/image1.png" alt="Front view of The Azure Estate" width="1200" height="800" loading="lazy">
                     <div class="price-badge">$1,890,000</div>
                 </div>
                 <div class="property-content">
-                    <h2>The Azure Estate</h2>
+                    <h2 id="prop-azure">The Azure Estate</h2>
                     <p class="location">Riverside Dr, Windsor</p>
-                    <div class="specs">
+                    <div class="specs" aria-hidden="true">
                         <span>4 BEDS</span>
                         <span>5 BATHS</span>
                         <span>4,200 SQFT</span>
                     </div>
                     <a href="property1.html" class="btn-action">View Residence</a>
                 </div>
-            </div>
+            </article>
 
-            <div class="property-card">
+            <article class="property-card" aria-labelledby="prop-skyline">
                 <div class="property-image">
-                    <img src="house2.png" alt="Modern Penthouse">
+                    <img src="house2/image1.png" alt="Exterior of Skyline Penthouse" width="1200" height="800" loading="lazy">
                     <div class="price-badge">$950,000</div>
                 </div>
                 <div class="property-content">
-                    <h2>Skyline Penthouse</h2>
+                    <h2 id="prop-skyline">Skyline Penthouse</h2>
                     <p class="location">Riverside Dr, Windsor</p>
-                    <div class="specs">
+                    <div class="specs" aria-hidden="true">
                         <span>2 BEDS</span>
                         <span>2.5 BATHS</span>
                         <span>2,100 SQFT</span>
                     </div>
                     <a href="property2.html" class="btn-action">View Residence</a>
                 </div>
-            </div>
+            </article>
 
-            <div class="property-card">
+            <article class="property-card" aria-labelledby="prop-lakeshore">
                 <div class="property-image">
-                    <img src="house3.png" alt="Lakeshore Manor">
+                    <img src="house3/image1.png" alt="Facade of Lakeshore Manor" width="1200" height="800" loading="lazy">
                     <div class="price-badge">$2,400,000</div>
                 </div>
                 <div class="property-content">
-                    <h2>Lakeshore Manor</h2>
+                    <h2 id="prop-lakeshore">Lakeshore Manor</h2>
                     <p class="location">Pearl St, Lakeshore</p>
-                    <div class="specs">
+                    <div class="specs" aria-hidden="true">
                         <span>5 BEDS</span>
                         <span>6 BATHS</span>
                         <span>6,800 SQFT</span>
                     </div>
                     <a href="property3.html" class="btn-action">View Residence</a>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
-    <footer class="site-footer">
-        <div style="margin-bottom: 2rem;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 1.8rem; letter-spacing: 3px; margin-bottom: 0.5rem;">
-                Luna Scott</h2>
-            <p style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.8;">Luxury Real
-                Estate • Windsor, Ontario</p>
-        </div>
 
-        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-brand">
+            <h2>Luna Scott</h2>
+            <p class="footer-sub">Luxury Real Estate • Windsor, Ontario</p>
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2026 Luna Scott Real Estate. All rights reserved.</p>
-            <p style="margin-top: 0.5rem;">Curating exceptional lifestyles for the discerning client.</p>
         </div>
     </footer>
 </body>
