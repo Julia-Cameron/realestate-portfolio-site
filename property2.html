@@ -3,39 +3,77 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Riverside Estate – Luna Scott Real Estate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skyline Penthouse – Luna Scott</title>
+
+    <meta name="description" content="Skyline Penthouse — 2 bed, 2.5 bath penthouse with panoramic views on Riverside Dr, Windsor.">
+    <link rel="canonical" href="https://julia-cameron.github.io/realestate-portfolio-site/property2.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Skyline Penthouse — Luna Scott">
+    <meta property="og:description" content="2 bed, 2.5 bath penthouse with panoramic views.">
+    <meta property="og:image" content="https://julia-cameron.github.io/realestate-portfolio-site/house2/image1.png">
+
+    <!-- Fonts & performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Apartment",
+      "name": "Skyline Penthouse",
+      "description": "2 bed, 2.5 bath penthouse with panoramic views on Riverside Dr, Windsor.",
+      "image": ["https://julia-cameron.github.io/realestate-portfolio-site/house2/image1.png"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riverside Dr",
+        "addressLocality": "Windsor",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "offers": { "@type": "Offer", "price": "950000", "priceCurrency": "CAD" }
+    }
+    </script>
 </head>
 
 <body>
-    <header class="site-header">
-        <a href="index.html" class="logo-area">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <a href="index.html" class="logo-area" aria-label="Luna Scott home">
             <div class="logo-mark">LS</div>
             <div class="logo-name">Luna Scott</div>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <a href="index.html" class="nav-btn">Home</a>
             <a href="listings.html" class="nav-btn">Listings</a>
             <a href="contact.html" class="nav-btn">Contact</a>
-            <a href="sitemap.html" class="nav-btn">Sitemap</a>
+            <a href="sitemap.html" class="nav-btn" aria-current="page">Sitemap</a>
         </nav>
     </header>
 
-    <main class="property-detail">
+    <main id="main-content" class="property-detail">
+        <nav aria-label="Breadcrumb" class="breadcrumbs"><a href="index.html">Home</a> / <a href="listings.html">Listings</a> / Skyline Penthouse</nav>
+
         <section class="property-hero">
             <div class="property-main-image">
-                <img src="house2/image1.png" alt="Skyline Penthouse">
-                <img src="house2/image2.png" alt="Skyline Penthouse">
-                <img src="house2/image3.png" alt="Skyline Penthouse">
-                <img src="house2/image4.png" alt="Skyline Penthouse">
-                <img src="house2/image5.png" alt="Skyline Penthouse">
-                <img src="house2/image6.png" alt="Skyline Penthouse">
+                <img src="house2/image1-800.webp" srcset="house2/image1-400.webp 400w, house2/image1-800.webp 800w, house2/image1-1600.avif 1600w" sizes="(max-width:600px) 100vw, 60vw" alt="Skyline Penthouse - image 1" width="1200" height="800" loading="lazy">
+                <img src="house2/image2-800.webp" srcset="house2/image2-400.webp 400w, house2/image2-800.webp 800w, house2/image2-1600.avif 1600w" sizes="(max-width:600px) 100vw, 60vw" alt="Skyline Penthouse - image 2" width="1200" height="800" loading="lazy">
+                <img src="house2/image3-800.webp" srcset="house2/image3-400.webp 400w, house2/image3-800.webp 800w, house2/image3-1600.avif 1600w" sizes="(max-width:600px) 100vw, 60vw" alt="Skyline Penthouse - image 3" width="1200" height="800" loading="lazy">
+                <img src="house2/image4-800.webp" srcset="house2/image4-400.webp 400w, house2/image4-800.webp 800w, house2/image4-1600.avif 1600w" sizes="(max-width:600px) 100vw, 60vw" alt="Skyline Penthouse - image 4" width="1200" height="800" loading="lazy">
+                <img src="house2/image5-800.webp" srcset="house2/image5-400.webp 400w, house2/image5-800.webp 800w, house2/image5-1600.avif 1600w" sizes="(max-width:600px) 100vw, 60vw" alt="Skyline Penthouse - image 5" width="1200" height="800" loading="lazy">
+                <img src="house2/image6-800.webp" srcset="house2/image6-400.webp 400w, house2/image6-800.webp 800w, house2/image6-1600.avif 1600w" sizes="(max-width:600px) 100vw, 60vw" alt="Skyline Penthouse - image 6" width="1200" height="800" loading="lazy">
             </div>
-            <div class="property-intro-card">
+
+            <aside class="property-intro-card" aria-labelledby="prop-title">
                 <span class="category-tag">Exclusive Listing</span>
-                <h1>Skyline Penthouse</h1>
+                <h1 id="prop-title">Skyline Penthouse</h1>
                 <p class="price-text">$950,000</p>
                 <p class="location-text">Riverside Dr, Windsor, ON</p>
 
@@ -46,50 +84,28 @@
                 </div>
 
                 <a href="contact.html" class="btn-action">Inquire About This Residence</a>
-            </div>
+            </aside>
         </section>
 
         <section class="property-description">
             <div class="desc-content">
                 <h3>Architectural Highlights</h3>
-
-                <ul><i>
-                        <li>This residence is defined by its transparency and its relationship with the skyline. It
-                            prioritizes the "view as art."</li>
-                        <li>Floor-to-Ceiling Fenestration: The use of expansive, seamless glass walls dissolves the
-                            boundary
-                            between the interior and the horizon, offering a 270-degree panoramic view of the water
-                            and
-                            the Detroit skyline.
-                        <li>Minimalist Structural Expression: Slim-profile mullions and a clean, white-on-white color
-                            palette emphasize a high-modernist aesthetic, allowing the architectural "bones" to remain
-                            subtle
-                            and unobtrusive.</li>
-                        <li>Volumetric Lighting: The interior features a curated collection of sculptural pendant
-                            lighting - a mix of organic matte white and polished brass globes—which adds a layer of
-                            mid-century
-                            modern sophistication.</li>
-                        <li>Integrated Outdoor Living: The transition to the glass-railed terrace is flush-mounted,
-                            extending the living square footage into the open air without visual interruption.
-                        </li>
-                    </i>
+                <ul>
+                    <li>Floor-to-ceiling fenestration offering panoramic views.</li>
+                    <li>Minimalist structural expression with high-quality finishes.</li>
+                    <li>Integrated outdoor living on private terrace.</li>
                 </ul>
             </div>
         </section>
     </main>
 
-
-    <footer class="site-footer">
-        <div style="margin-bottom: 2rem;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 1.8rem; letter-spacing: 3px; margin-bottom: 0.5rem;">
-                Luna Scott</h2>
-            <p style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.8;">Luxury Real
-                Estate • Windsor, Ontario</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-brand">
+            <h2>Luna Scott</h2>
+            <p class="footer-sub">Luxury Real Estate • Windsor, Ontario</p>
         </div>
-
-        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+        <div class="footer-bottom">
             <p>&copy; 2026 Luna Scott Real Estate. All rights reserved.</p>
-            <p style="margin-top: 0.5rem;">Curating exceptional lifestyles for the discerning client.</p>
         </div>
     </footer>
 </body>
